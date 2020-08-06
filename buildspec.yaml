@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+    - echo "Entered the pre-build phase"
+    - mvn clean install -DskipTests
+artifacts:
+  files:
+    - target/prioritymanager-1.0.jar
